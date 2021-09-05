@@ -9,11 +9,11 @@ public class DeckOfCard {
 
 	public static void main(String[] args) {
 		
-		String[][] players=new String[4][13]; 
+		String[][] totalcards=new String[4][13]; 
 		
 		String[]suits= {"Clubs","Diamonds","Hearts","Spades"};//array of suits
 		String[]Ranks= {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};//array of Ranks of cards
-		String[][] Cards=Utility.deckOfCard2DArray(suits,Ranks,players);
+		String[][] Cards=Utility.deckOfCard2DArray(suits,Ranks,totalcards);
 		System.out.println("Total Cards in Pack");
 		System.out.println();
 		DeckOfCard.displayCards2DArrayAllCards(Cards);
